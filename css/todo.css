@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	width: 8rem;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	
+	background: #cdcdcd;
+	
+}
+.title{
+	background: #323232;
+	width: 8rem;
+	height: 0.5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	
+}
+.title>h1{
+	width: 1rem;
+	height: 0.5rem;
+	color: #ddd;
+	
+    font-weight: 500;
+    line-height: 0.5rem;
+}
+.title>input{
+	width: 3.6rem;
+	height: 0.25rem;
+	border-radius: 0.06rem;
+	outline: 0;
+}
+.content{
+	width: 8rem;
+	background: #cdcdcd;
+	font-size: 0.25rem;
+	flex: 1;
+	
+	
+}
+.content>.todoed,.content>.todoing{
+	width: 6rem;
+	margin: 0 auto;
+	
+	
+}
+.content .down,.content .doing{
+	width: 6rem;
+	height: 0.3rem;
+	margin: 0.2rem auto 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content .count{
+	width: 0.2rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+	font-size: 0.2rem;
+	border-radius: 0.1rem;
+	background: #E6E6FA;
+}
+h1{
+	font-size: 0.25rem;
+}
+body > div.content > div.todoing > div > input:nth-child(2){
+	/*background: #e6e6e6;*/
+	width: 6rem;
+	font-size: 0.26rem;
+	line-height: 0.3rem;
+	border: 0;
+}
+body > div.content > div.todoing > div{
+	width: 6rem;
+	height: 0.3rem;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-left: 0.05rem solid deepskyblue;
+	border-radius: 0.04rem;
+}
+body > div.content > div.todoing > div > input[type="checkbox"]:nth-child(1){
+	height: 0.22rem;
+	width: 0.22rem;
+	margin: 0 0.15rem;
+}
+body > div.content > div.todoed > div{
+	width: 6rem;
+	height: 0.3rem;
+	background: #e6e6e6;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-left: 0.05rem solid #b3b3b3;
+	border-radius: 0.04rem;
+}
+body > div.content > div.todoed > div > input[type="checkbox"]:nth-child(1){
+	height: 0.22rem;
+	width: 0.22rem;
+	margin: 0 0.15rem;
+}
+body > div.content > div.todoed > div > input:nth-child(2){
+	background: #e6e6e6;
+	width: 6rem;
+	font-size: 0.26rem;
+	line-height: 0.3rem;
+	border: 0;
+}
+body > div.content > div.todoing > div > img,body > div.content > div.todoed > div > img{
+	color: #ccc;
+	height: 0.3rem;
+	width: 0.3rem;
+
+}
